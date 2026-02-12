@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSnap AI - Nutrition Tracking App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .permissions {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .developer-info {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .developer-info h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">NutriSnap AI</div>
+            <p class="tagline">Intelligent Nutrition Tracking Powered by AI</p>
+        </header>
+        
+        <div class="content">
+            <h1>About NutriSnap AI</h1>
+            <p>NutriSnap AI is an innovative mobile application that revolutionizes nutrition tracking by leveraging advanced artificial intelligence to analyze food images and provide comprehensive nutritional information. Our app makes healthy eating accessible and effortless for everyone.</p>
+            
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📸 AI-Powered Food Recognition</h3>
+                    <p>Simply capture or upload a photo of your food, and our advanced AI instantly identifies the food item and provides detailed nutritional analysis.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 Comprehensive Nutrition Data</h3>
+                    <p>Get detailed information including calories, protein, carbohydrates, fats, fiber, sugar, and sodium content for every food item analyzed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📱 Intuitive User Interface</h3>
+                    <p>Designed with user experience in mind, our clean and modern interface makes nutrition tracking simple and enjoyable.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📋 Manual Entry Option</h3>
+                    <p>For foods that can't be photographed, easily enter nutrition information manually with our comprehensive database.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📈 Progress Tracking</h3>
+                    <p>Monitor your daily nutritional intake and track your progress toward health and fitness goals over time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔒 Privacy Focused</h3>
+                    <p>Your data remains private and secure. We never share your personal nutrition information with third parties.</p>
+                </div>
+            </div>
+            
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Capture or Upload:</strong> Take a photo of your food or select an existing image from your gallery</li>
+                <li><strong>AI Analysis:</strong> Our advanced AI processes the image and identifies the food item</li>
+                <li><strong>Nutrition Data:</strong> Receive comprehensive nutritional information including macronutrients and micronutrients</li>
+                <li><strong>Review & Save:</strong> Verify the information and save it to your nutrition history</li>
+                <li><strong>Track Progress:</strong> Monitor your daily intake and work toward your health goals</li>
+            </ol>
+            
+            <h2>Supported AI Models</h2>
+            <ul>
+                <li><strong>Google Gemini Flash 2.5:</strong> Advanced multimodal AI for accurate food recognition and analysis</li>
+                <li><strong>OpenAI GPT-4 Vision:</strong> Cutting-edge image analysis technology for comprehensive nutrition data</li>
+            </ul>
+            
+            <div class="permissions">
+                <h2>App Permissions</h2>
+                <p>For optimal functionality, NutriSnap AI requires the following permissions:</p>
+                <ul>
+                    <li><strong>Camera:</strong> To capture photos of food items for AI analysis</li>
+                    <li><strong>Photo Library:</strong> To access existing images for nutrition analysis</li>
+                    <li><strong>Internet:</strong> To communicate with AI services and retrieve nutritional data</li>
+                    <li><strong>Storage:</strong> To save user data, preferences, and nutrition history locally</li>
+                </ul>
+                <p><em>All permissions are used solely for the core functionality of the app and your privacy is our top priority.</em></p>
+            </div>
+            
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li><strong>Platform:</strong> Android (API 21+)</li>
+                <li><strong>Architecture:</strong> React Native with Expo</li>
+                <li><strong>AI Integration:</strong> Google Gemini API and OpenAI API</li>
+                <li><strong>Data Storage:</strong> Local storage with optional cloud sync</li>
+                <li><strong>Image Processing:</strong> Base64 encoding for API communication</li>
+            </ul>
+        </div>
+        
+        <div class="developer-info">
+            <h2>Developed by Scholarship</h2>
+            <p>Committed to creating innovative health and wellness applications that make a positive impact on people's lives.</p>
+            <p>© 2024 Scholarship. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
